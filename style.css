@@ -12,3 +12,40 @@
 #bye {
     cursor: pointer;
 }
+
+.container {
+    background-color: rgb(6, 112, 112);
+}
+
+.number {
+    width: 10rem;
+    margin: auto;
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+.topBtns {
+    display: flex;
+    width: 20rem;
+    margin: auto;
+    background-color: rgb(6, 112, 112);
+    padding: 1rem 5rem;
+    justify-content: space-between;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.res {
+    width: 4rem;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+button:hover {
+    background-color: rgb(8, 54, 54);
+    color: white;
+}

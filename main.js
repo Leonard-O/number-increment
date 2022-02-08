@@ -1,12 +1,3 @@
-// const btn = document.getElementById('btn');
-// const body = document.querySelectorAll('body');
-// const demo = document.getElementById('demo');
-
-// btn.addEventListener('click', function() {
-//     demo.innerHTML = 'Hello world';
-//     document.body.style.backgroundColor = 'red';
-// });
-
 const body = document.body;
 
 // // document.body.style.backgroundColor = 'red';
@@ -22,15 +13,40 @@ const body = document.body;
 const div = document.querySelector('div');
 const spanHi = document.querySelector('#hi');
 const spanBye = document.querySelector('#bye');
+let num = document.querySelector('#num');
+const btn = document.querySelector('#btn');
+const btn2 = document.querySelector('#btn2');
+const reset = document.querySelector('#reset');
+//
 
 // spanBye.remove();
-div.append(spanBye);
-// div.removeChild(spanHi);
+// div.append(spanBye);
+// // div.removeChild(spanHi);
 
-div.addEventListener('mouseover', function() {
-    spanHi.remove();
+// div.addEventListener('mouseover', function() {
+//     spanHi.toggle(false);
+// });
+
+// div.addEventListener('mouseout', function() {
+//     div.appendChild(spanHi);
+// });
+
+let value = 0;
+
+num.style.color = 'red';
+num.style.fontSize = '5rem';
+
+btn2.addEventListener('click', function() {
+    value += 1;
+    num.innerHTML = value;
 });
 
-div.addEventListener('mouseout', function() {
-    div.appendChild(spanHi);
+btn.addEventListener('click', function() {
+    value -= 1;
+    num.innerHTML = value;
+});
+
+reset.addEventListener('click', function() {
+    value = 0;
+    num.innerHTML = value;
 });
